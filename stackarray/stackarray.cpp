@@ -78,3 +78,23 @@ int main() {
 			s.push(element);
 			break;
 		}
+
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is empty" << endl;
+				break;
+			}
+			s.pop();
+			break;
+		case '3':
+			s.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\nInvalid Choice." << endl;
+			break;
+		}
+
+	}
+}
