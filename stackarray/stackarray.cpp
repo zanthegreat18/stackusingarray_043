@@ -42,3 +42,15 @@ public:
 	bool empty() {
 		return (top == -1);
 	}
+
+	void display() {
+		if (empty()) {
+			cout << "\nStack is empty." << endl;
+		}
+		else {
+			for (int tmp = top; tmp >= 0; tmp--) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
+};
