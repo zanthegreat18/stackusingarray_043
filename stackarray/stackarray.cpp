@@ -18,3 +18,12 @@ public:
 			cout << "Stack Full" << endl;
 			return "";
 		}
+
+		top++;
+		stack_array[top] = element;
+
+		cout << endl;
+		cout << element << "ditambahkan (pushed)." << endl;
+
+		return element;
+	}
